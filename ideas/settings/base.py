@@ -27,6 +27,16 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['yeimerideas.herokuapp.com']
 
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'yeimer.molina@gmail.com' #my gmail username
+EMAIL_HOST_PASSWORD = 'Yeimergabriel12' #my gmail password
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = "Yeimer <yeimer.molina@gmail.com>"
+
+
+ADMINS = [('Yeimer', EMAIL_HOST_USER)]
+MANAGERS = ADMINS
 
 # Application definition
 

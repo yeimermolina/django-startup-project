@@ -25,8 +25,18 @@ SECRET_KEY = 'ztc)2p7v#v%4iwn-a7&6p8=gpl!^0z+r-_^8hlk9@(6+r2f%rm'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', 'yeimerideas.herokuapp.com']
+ALLOWED_HOSTS = ['0.0.0.0', 'yeimerideas.herokuapp.com', '127.0.0.1']
 
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'yeimer.molina@gmail.com' #my gmail username
+EMAIL_HOST_PASSWORD = 'Yeimergabriel12' #my gmail password
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = "Yeimer <yeimer.molina@gmail.com>"
+
+
+ADMINS = [('Yeimer', EMAIL_HOST_USER)]
+MANAGERS = ADMINS
 
 # Application definition
 
